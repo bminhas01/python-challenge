@@ -78,7 +78,6 @@ with open(csvpath) as csvfile:
             dec_date = dates[b]
 
 # Print Final Analysis
-
 print(f'Financial Analysis')
 print("------------------------------------------------")
 print(f'Total Months: {num_rows}') 
@@ -87,8 +86,8 @@ print(f'Average Change: ${average}')
 print(f'Greatest Increase in Profits: {inc_date} (${greatest_inc})')
 print(f'Greatest Decrease in Profits: {dec_date} (${greatest_dec})')
 
-
-with open(r'''C:\Users\bisma\python-challenge\PyBank\Analysis\answer.txt''', "w") as file:
+# Export Final Analysis to text file
+with open(r'''C:\Users\bisma\python-challenge\PyBank\Analysis\Bank_Analysis.txt''', "w") as file:
     file.write('Financial Analysis\n')
     file.write('------------------------------------------\n')
     file.write(f'Total Months: {num_rows}\n')
